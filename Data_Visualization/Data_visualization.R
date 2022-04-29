@@ -6,6 +6,7 @@ library("readxl")
 library("gtable")
 library(ggpubr)
 
+#set working directory 
 setwd("C:/Users/tao97/OneDrive - purdue.edu/2022_Spring/ABE314/Final_Project/Report/Data")
 
 my_data_1 <- read_excel("Data_collection.xlsx", sheet=1)
