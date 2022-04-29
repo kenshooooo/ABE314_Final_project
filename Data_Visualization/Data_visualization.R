@@ -1,4 +1,4 @@
-#install.packages("readxl")
+install.packages("readxl")
 install.packages("ggpubr")
 
 library("ggplot2")
@@ -6,7 +6,6 @@ library("readxl")
 library("gtable")
 library(ggpubr)
 
-#set working directory 
 setwd("C:/Users/tao97/OneDrive - purdue.edu/2022_Spring/ABE314/Final_Project/Report/Data")
 
 my_data_1 <- read_excel("Data_collection.xlsx", sheet=1)
@@ -56,8 +55,8 @@ plot4 <- ggplot(my_data_4, aes(`Index`, `rotationalSpeed`)) +
   #scale_y_continuous(breaks = pretty(my_data_4$rotationalSpeed, n = 5)) 
 
 ggarrange(plot1,plot2,plot3,plot4,
-          labels = c("Line:17   kp=0.01", "Line:17   kp=0.02", 
-                     "Line:22   kp=0.01", "Line:22   kp=0.02"),
+          labels = c("Linear:17   Kp=0.01", "Linear:17   Kp=0.02", 
+                     "Linear:22   Kp=0.01", "Linear:22   Kp=0.02"),
           ncol = 2, nrow = 2)
 
 dev.off()
