@@ -7,7 +7,7 @@
    Date Submitted:      04/26/2022
    Lab Number:          001
    Lab Title:           Final project
-   Sketch Description:  A robot that does self-calibration, line following, marker counting, and object detection
+   Sketch Description:  A robot that does self-calibration, line following, marker counting, and object detection.
 */
 
 //We used robot #10
